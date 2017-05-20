@@ -1,0 +1,69 @@
+<!-- body element -->
+<style>
+   body
+   {
+      background-color: silver;
+      color: green;
+      font-family: Monospace;
+   }
+   #orange-text
+   {
+      color: orange;
+   }
+   .black-text
+   {
+      color: black !important;
+   }
+   .red-text
+   {
+      color: red;
+   }
+   .blue-text
+   {
+      color: blue;
+   }
+   #purple-text
+   {
+      color: purple;
+   }
+</style>
+
+<!-- default: use body style -->
+<h1>Hello World</h1>
+
+<!-- class style overrides body style -->
+<h2 class="red-text">Hello World</h2>
+
+<!-- style whose class has the declaration at the bottom overrides other class's style-->
+<h3 class="red-text blue-text">Hello World</h3>
+<h4 class="blue-text red-text">Hello World</h4>
+
+<!-- id override class -->
+<h5 id="orange-text" class="red-text">Hello World</h5>
+<h6 id="orange-text" class="blue-text">Hello World</h6>
+
+<!-- inline style override all the above -->
+<p style="color: green" class="red-text">Hello World</p>
+<p style="color: green" id="orange-text">Hello World</p>
+
+<!-- !important keyword make whatever shit its attached to has the greatest priority -->
+<p style="color: green" id="orange-text" class="red-text blue-text black-text">Hello World</p>
+
+<!-- div -->
+<!-- <A-o>, -->
+
+<!-- ul > li*5 > a[href=#]{link} < p{content}*2 -->
+<!-- <A-o>, -->
+
+<!-- form > label*4 > input[type=radio][name=""] -->
+<!-- <A-o>, -->
+
+<!-- http://www.google.com/ -->
+<!-- <A-o>a -->
+<!-- <A-o>A -->
+
+<!-- div > p > lorem -->
+<!-- <A-o>, -->
+
+<!-- div#content > p < h1 + h2 + h3 -->
+<!-- <A-o>, -->

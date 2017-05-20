@@ -1,0 +1,327 @@
+<h1>Big Header 1</h1>
+<h2>Smaller Header 2</h2>
+<p>This is a very short Paragraph</p>
+
+<!-- <p>this is a comment</p> -->
+
+<!-- inline style -->
+<!-- color attribute -->
+<p style="color:red">Me is red</p>
+
+<!-- use css to add style -->
+<style>
+   red {color:red;}
+</style>
+<red style="color:red">Me is red too</red>
+
+<!-- class -->
+<style>
+   .blue-text
+   {
+      color:blue;
+   }
+</style>
+<p class="blue-text">Me is blue</p>
+
+<!-- font size attribute -->
+<!-- font family attribute -->
+<style>
+   fs
+   {
+      font-size: 30px;
+      font-family: Monospace;
+   }
+</style>
+<fs>Look at me, Im so big<br/></fs>
+
+<!-- endline -->
+<br/>
+
+<!-- import google font and use it -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+   gf
+   {
+      font-family: Lobster;
+   }
+</style>
+<gf>me have lobster font<br/>
+
+<!-- degrade font: use other fonts when primary font is not available -->
+<style>
+   .PrimaryFont
+   {
+      font-family: Serif, Sans-Serif;
+   }
+   .SecondaryFont
+   {
+      font-family: Sans-Serif;
+   }
+</style>
+<p class="PrimaryFont">This is Serif font</p>
+<p class="SecondaryFont">This is Sans-Serif font</p>
+
+<!-- add image -->
+<img src="https://bit.ly/fcc-relaxing-cat" alt="a relaxed cat">
+
+<!-- width property (attribute) -->
+<style>
+   .smaller-image
+   {
+      width: 100px;
+   }
+</style>
+<img class="smaller-image" src="https://bit.ly/fcc-relaxing-cat" alt="a relaxed cat">
+
+<!-- border around element -->
+<style>
+   .BadBorder
+   {
+      border-color: purple;
+      border-width: 5px;
+      border-style: solid;
+   }
+</style>
+<img class="smaller-image BadBorder" src="https://bit.ly/fcc-relaxing-cat" alt="a relaxed cat">
+
+<br/>
+
+<!-- round border -->
+<style>
+   .Round
+   {
+      border-radius: 10px;
+   }
+   .Rounder
+   {
+      border-radius: 20px;
+   }
+   .Roundest
+   {
+      border-radius: 100px;
+   }
+   .AlsoRoundest
+   {
+      border-radius: 50%;
+   }
+</style>
+<img class="smaller-image Round" src="https://bit.ly/fcc-relaxing-cat" alt="a relaxed cat">
+<img class="smaller-image Rounder" src="https://bit.ly/fcc-relaxing-cat" alt="a relaxed cat">
+<img class="smaller-image Roundest" src="https://bit.ly/fcc-relaxing-cat" alt="a relaxed cat">
+<img class="smaller-image AlsoRoundest" src="https://bit.ly/fcc-relaxing-cat" alt="a relaxed cat">
+
+<!-- a element (anchor) using href (hypertext reference) attribute -->
+<br/>
+<a href="http://freecatphotoapp.com">funny cat gif</a>
+
+<!-- nesting (putting one element inside another element) -->
+<p>funny cat <a href="http://freecatphotoapp.com">gif</a></p>
+
+<!-- dead link --> 
+<!-- (Sometimes you want to add a elements to your website before you know where they will link) -->
+<a href="#">funny cat gif</a>
+
+<br/>
+<br/>
+
+<!-- turn image to a link (nesting) -->
+<a href="#">
+   <img class="smaller-image Round" src="https://bit.ly/fcc-relaxing-cat" alt="a relaxed cat">
+</a>
+
+<!-- unordered lists element -->
+<p>Cats love:</p>
+<ul>
+   <li>Milk</li>
+   <li>Mouse</li>
+   <li>Wool</li>
+</ul>
+
+<!-- order lists element -->
+<p>Cats hate:</p>
+<ol>
+   <li>Dog</li>
+   <li>Hotdog</li>
+   <li>Something that cats hate</li>
+</ol>
+
+<!-- text input -->
+<input type="text" placeholder="plz type something">
+
+<!-- form element -->
+<form action="/process-input.php">
+   <input type="text" placeholder="plz type something">
+   <button type="submit">Submit</button>
+</form>
+
+<!-- use html5 to require a field -->
+<form>
+   <input type="text" required>
+   <button type="submit">Submit</button>
+</form>
+
+<!-- radio button -->
+<form>
+   <label>
+      <input type="radio" name="pet"> Dog
+   </label>
+   <label>
+      <input type="radio" name="pet"> Cat
+   </label>
+   <label>
+      <input type="radio" name="pet"> Mouse
+   </label>
+   <button type="submit">Submit</button>
+</form>
+
+<!-- checkbox -->
+<form>
+   <p>What text editor did you use?</p>
+   <label>
+      <input type="checkbox" name="text-editor"> Emacs
+   </label>
+   <label>
+      <input type="checkbox" name="text-editor"> Vim
+   </label>
+   <label>
+      <input type="checkbox" name="text-editor"> Sublime
+   </label>
+</form>
+
+<!-- check by default -->
+<form>
+   <label>
+      <input type="checkbox" name="car-brand" checked> Ford
+   </label>
+   <label>
+      <input type="checkbox" name="car-brand" checked> Ferrari
+   </label>
+   <br/>
+   <label>
+      <input type="radio" name="fruit"> Apple
+   </label>
+   <label>
+      <input type="radio" name="fruit" checked> Banana
+   </label>
+</form>
+
+<!-- div element (division) - background-color property -->
+<style>
+   .background-color
+   {
+      background-color: silver;
+      width: 400px;
+   }
+</style>
+
+<div class="background-color">
+   <p>this text has silver background color</p>
+   <p>also is this line of text</p>
+</div>
+
+<!-- id attribute - should be unique to each element -->
+<p id="hello-world">Hello world</p>
+<p id="hi-world">Hi world</p>
+
+<!-- using id attribute to style an element -->
+<style>
+   #hello-world
+   {
+      background-color: green;
+      width: 400px;
+   }
+   #hi-world
+   {
+      background-color: purple;
+      width: 400px;
+   }
+</style>
+
+<!-- Margin Padding and Border attribute -->
+<!-- An element's padding controls the amount of space between the element and its border -->
+<!-- An element's margin controls the amount of space between an element's border and surrounding elements. -->
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+    width: 320px;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .red-box {
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .blue-box{
+     background-color: blue;
+     padding: 15;
+     margin: -15px;
+  }
+
+  .purple-box{
+     background-color: purple;
+     padding-top: 40px;
+     padding-left: 40px;
+     padding-right: 20px;
+     padding-bottom: 20px;
+  }
+
+  .orange-box{
+     background-color: orange;
+     padding: 40px 20px 20px 40px;
+  }
+
+  .pink-box{
+     background-color: pink;
+        margin-top: -5px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        margin-left: -5px;
+   }
+
+  .black-box{
+     border-color: silver;
+     background-color: black;
+     color: white;
+     margin: -5px 30px 30px -5px;
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+  <h5 class="box purple-box">padding</h5>
+  <h5 class="box orange-box">padding</h5>
+  <h5 class="box pink-box">padding</h5>
+  <h5 class="box black-box">padding</h5>
+</div>
+
+<!-- body element -->
+<style>
+   body
+   {
+      background-color: silver;
+   }
+</style>
+
