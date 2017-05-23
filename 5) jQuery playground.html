@@ -1,13 +1,81 @@
 <!-- add bootstrap - a front-end framework -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+<!-- a cross-browser library of CSS animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+<!-- jQuery - javascript library to make your life easier -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- using custom font from google (Lobster) -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<!-- script element - javascript code is executed inside it -->
+<script>
+   <!-- functions inside will run after HTML is rendered thus reduce chances of getting bugs -->
+   <!-- all jQuery functions start with a $ -->
+   $(document).ready(function(){});
+
+   $(document).ready(
+      function(){
+
+         <!-- select html element with a selector then does something to it -->
+         $("button").addClass("animated bounce");
+
+         <!-- select html element by class then does something to it -->
+         $(".well").addClass("animated shake");
+
+         <!-- select html element by id then does something to it -->
+         $("#target1").addClass("animated fadeOut");
+
+         <!-- removeClass() is a function to remove class from selected element -->
+         $("#target2").removeClass("btn-default");
+         $("#target3").removeClass("btn btn-default");
+
+         <!-- use css() function to change the CSS of an element -->
+         $("#target4").css("color", "red");
+
+         <!-- change other properties of element using jQuery -->
+         $("#target5").prop("disabled", true);
+
+         <!-- change text inside element using jQuery with text(), html() -->
+         $("#header4_1").html("<b>This is a normal line of text</b>");
+         $("#header4_2").text("<b>This is a fucked-up line of text</b>");
+
+         <!-- use remove() to remove html element entirely -->
+         $("#target6").remove();
+
+         <!-- use appendTo() to select elements and append them to another element -->
+         $("#target7").appendTo("#left-well");
+
+         <!-- clone() to copy an element - function chaining -->
+         $("#target2").clone().appendTo("#right-well");
+
+         <!-- select parent element of an element by using parent() -->
+         $("#target1").parent().css("background-color", "silver");
+
+         <!-- target children elements of an element by using children() -->
+         $("#right-well").children().css("background-color", "silver");
+
+         <!-- target a specific child of element with selected class using jQuery -->
+         $(".target:nth-child(n)").css("font-family", "Lobster");
+         $(".target:nth-child(4)").css("font-family", "Monospace");
+
+         <!-- target odd/even numbered element -->
+         $(".target:even").css("color", "blue");
+
+         <!-- target the entire page using jQuery -->
+         $("body").addClass("animated bounceIn");
+      });
+</script>
+
 <!-- well -->
 <!-- btn-default -->
 
 <!-- Only change code above this line -->
 
 <div class="container-fluid">
-   <h3 class="text-primary text-center">jQuery playground</h3>
+   <h3 class="text-primary text-center">jQuery Playground</h3>
    <div class="row">
       <div class="col-xs-6">
          <h4>#left-well</h4>
@@ -15,15 +83,19 @@
             <button id="target1" class="btn btn-default target">#target1</button>
             <button id="target2" class="btn btn-default target">#target2</button>
             <button id="target3" class="btn btn-default target">#target3</button>
+            <button id="target4" class="btn btn-default target">#target4</button>
          </div>
       </div>
       <div class="col-xs-6">
          <h4>#right-well</h4>
          <div id="right-well" class="well">
-            <button id="target4" class="btn btn-default target">#target4</button>
             <button id="target5" class="btn btn-default target">#target5</button>
             <button id="target6" class="btn btn-default target">#target6</button>
+            <button id="target7" class="btn btn-default target">#target7</button>
+            <button id="target8" class="btn btn-default target">#target8</button>
          </div>
       </div>
    </div>
+   <h4 id="header4_1"></h4>
+   <h4 id="header4_2"></h4>
 </div>
