@@ -1,0 +1,19 @@
+Top bar:
+   Portfolio                                 Project | About me | Contact
+
+Name: Near
+
+About me:
+   
+Projects:
+   Tribute Page
+   Coming soon
+
+Future Web Developer
+freeCodeCamp junior
+
+
+Link
+   Facebook
+   Twitter
+   Github

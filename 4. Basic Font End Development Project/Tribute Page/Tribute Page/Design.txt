@@ -1,0 +1,11 @@
+Tribute Page
+   Name - Title(?)
+   Short description
+   Picture
+      Caption
+   Highlight
+      Characteristics
+      Quote
+   Timeline
+   External Reference
+   About

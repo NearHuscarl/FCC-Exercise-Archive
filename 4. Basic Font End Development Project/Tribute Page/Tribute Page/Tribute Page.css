@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:extra-light, medium');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body {
+   margin: 50px 40px 50px 40px;
+   background-color: #848484;
+}
+
+div.container {
+   background-color: #eeeeee;
+   border-style: solid;
+   border-color: #f0ad4e #d89b46 #d89b46 #f0ad4e;
+   border-radius: 15px;
+   border-width: .3em;
+   padding: 30px 30px 30px 30px;
+}
+
+h1 {
+   font-family: 'Exo 2', monospace;
+   font-size: 7em;
+   font-weight: 100;
+   color: #777777;
+} 
+
+h5 {
+   font-family: 'Exo 2', monospace;
+   font-size: 1.5em;
+   font-weight: 100;
+   color: #777777;
+}
+
+p {
+   font-size: 17px;
+   color: #777777;
+}
+
+li {
+   color: #777777;
+}
+
+blockquote {
+   background-color: #f1f1f1;
+   margin-top: 20px;
+   font-family: 'Exo 2', monospace;
+}
+
+#quote {
+   margin-left: 35px;
+   margin-right: 35px;
+   border-left-color: #f0ad4e;
+}
+
+.header3 {
+   background-color: #777777;
+   color: #eeeeee;
+
+   margin-top: 1em;
+   margin-bottom: 1em;
+
+   padding-top: 0.05em;
+   padding-bottom: 0.25em;
+   padding-left: 1em;
+
+   border-radius: 0.5em;
+
+   font-family: 'Orbitron';
+}
+
+.biography {
+   margin-left: 35px;
+   margin-right: 35px;
+   font-size: 1em;
+}
+
+.pic-caption {
+   font-family: 'Exo 2', monospace;
+   color: #777777;
+   font-size: 1em;
+   font-weight: 400;
+}
+
+.img-bg {
+   background-color: #e1e1e1;
+   border-color: #777777;
+   border-style: solid;
+   border-radius: 10px;
+   margin: 1em 1em 1em 1em;
+   padding: 0.5em 0.5em 0.5em 0.5em;
+   /* overflow: hidden; */
+}
+
+.about-me {
+   font-family: 'Exo 2', monospace;
+   color: #eeeeee;
+   font-size: 1em;
+   font-weight: 100;
+}
+
+a:link, a:visited {
+   color: #b0e0e6;
+}
+
+a:hover, a:active {
+   color: #f0ad4e;
+}
+
+div.img-bg:hover {
+   background-color: #fff3e0;
+}
