@@ -10,9 +10,11 @@ div.container {
    background-color: #d4d4d4;
    border-style: solid;
    border-color: #f0ad4e #d89b46 #d89b46 #f0ad4e;
+   /* box-shadow: 3px 3px 5px #424242; */
    border-radius: 15px;
    border-width: .3em;
    padding: 30px 30px 30px 30px;
+   margin-bottom: -1em;
 }
 
 h1 {
@@ -32,9 +34,11 @@ h5 {
 p {
    font-size: 17px;
    color: #848484;
+   margin-top: 1em;
+   margin-bottom: 1em;
 }
 
-li {
+dl {
    color: #848484;
 }
 
@@ -54,19 +58,17 @@ blockquote {
    background-color: #848484;
    color: #eeeeee;
 
-   margin-top: 1em;
-   margin-bottom: 1em;
+   margin-top: 2em;
+   margin-bottom: 2em;
 
-   padding-top: 0.05em;
-   padding-bottom: 0.25em;
-   padding-left: 1em;
-
+   padding: 0.1em 1em 0.25em 1em;
    border-radius: 0.5em;
 
    font-family: 'Orbitron';
 }
 
 .biography {
+   text-align: justify;
    margin-left: 35px;
    margin-right: 35px;
    font-size: 1em;
@@ -77,6 +79,17 @@ blockquote {
    color: #848484;
    font-size: 1em;
    font-weight: 400;
+   margin-bottom: 1em;
+}
+
+dt {
+   float: left;
+   width: 8%;
+}
+
+dd {
+   float: left;
+   width: 92%;
 }
 
 .img-bg {
@@ -107,6 +120,11 @@ a:hover, a:active {
 div.img-bg:hover {
    background-color: #fff3e0;
    border-color: #f0ad4e;
+}
+
+div.img-bg:active {
+   background-color: #ffe9c7;
+   border-color: #eea236;
 }
 
 blockquote:hover{
