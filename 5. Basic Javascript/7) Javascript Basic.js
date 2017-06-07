@@ -886,7 +886,7 @@ var softwareCount = testString.match(expressionToGetSoftware).length; // 1
 
 // Find number with regular expression
 var testString = "There are 3 cats but 4 dogs.";
-// \d is digit selector - match a digt
+// \d is digit selector - match a digit
 // + is used to append after a selector to match one or more times
 // \d+\ means match one and more digits
 var expression = /\d+/g;
