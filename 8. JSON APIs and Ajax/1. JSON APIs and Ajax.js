@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
    $("#getMessage").on("click", function(){
       $(".message").html("Here is the message");
    });
@@ -10,8 +11,8 @@ $(document).ready(function(){
    });
 
    $("#makeList").on("click", function(){
-      var html = "";
       $.getJSON("https://raw.githubusercontent.com/NearHuscarl/FCC-Exercise-Archive/master/8.%20JSON%20APIs%20and%20Ajax/data.json", function(catList){
+         var html = "";
 
          catList.forEach(function(cat){
             var catPropList = Object.keys(cat);
@@ -28,10 +29,10 @@ $(document).ready(function(){
    });
 
    $("#renderImg").on("click", function(){
-      var html = "";
-
       $.getJSON("https://raw.githubusercontent.com/NearHuscarl/FCC-Exercise-Archive/master/8.%20JSON%20APIs%20and%20Ajax/data.json", function(catList){
          catList.forEach(function(cat){
+            var html = "";
+
             html += "<div class='center-block'>";
             html += "<img src='" + cat.imageLink + "' alt='" + cat.altText + "'>";
             html += "</div><br>";
